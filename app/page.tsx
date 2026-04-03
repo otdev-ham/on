@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { PartnerBar } from "@/components/PartnerBar";
 import { StatCards } from "@/components/StatCards";
-import { OT_FORM_URL, SERVICE_FORM_URL } from "@/lib/site";
+import { SERVICE_FORM_URL } from "@/lib/site";
 
 export default function HomePage() {
   return (

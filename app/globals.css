@@ -21,6 +21,20 @@
   --color-paper: #faf8f6;
   --color-ink: #1c1917;
   --color-ink-muted: #57534e;
+
+  /* maum-on-recruit.html 팔레트 (모집 페이지) */
+  --color-maum-teal: #2a9d8f;
+  --color-maum-teal-light: #e8f7f5;
+  --color-maum-teal-dark: #1b7268;
+  --color-maum-coral: #e76f51;
+  --color-maum-coral-light: #fdf0ec;
+  --color-maum-navy: #1d3557;
+  --color-maum-navy-light: #eef2f7;
+  --color-maum-gray-100: #f8f9fa;
+  --color-maum-gray-200: #f0f2f4;
+  --color-maum-gray-500: #868e96;
+  --color-maum-gray-700: #495057;
+  --color-maum-gray-900: #212529;
 }
 
 html {
