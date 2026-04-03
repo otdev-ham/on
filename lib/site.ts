@@ -1,5 +1,3 @@
-/** 외부 신청 폼 URL */
-export const SERVICE_FORM_URL = "https://forms.gle/placeholder-service";
 /** OT 모집 Google Form (maum-on-recruit.html 기준) */
 export const OT_FORM_URL = "https://forms.gle/bjwAuYJTL2MG9gWH9";
 

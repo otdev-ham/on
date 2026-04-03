@@ -17,14 +17,15 @@ const purposes = [
 ];
 
 const eligibility = [
-  <>서울특별시작업치료사회 <strong>협회 회원</strong></>,
+  <>대한작업치료사협회 <strong>정회원 우선 모집</strong></>,
   <>
-    <strong>방문 작업치료 경험</strong>이 있는 작업치료사
+    방문 작업치료 경험이 없어도! <strong>열정있는! 작업치료사</strong>
   </>,
   <>
-    지역사회 기반 OT에 <strong>관심</strong>이 있는 작업치료사
+    지역사회 기반에 자신이 없어도! <strong>관심</strong>이 있는 작업치료사
   </>,
-  <>ICF·작업기반 기록을 배우고 싶은 분</>,
+  <><strong>ICF·작업기반 기록</strong>을 배우고 싶은 분</>,
+  <>선생님의 작업 경험을 지원합니다. <strong>지원해주세요!</strong></>,
 ];
 
 const processSteps = [
@@ -77,7 +78,7 @@ export default function RecruitPage() {
             함께 성장하는 구조입니다.
           </p>
           <div className="mb-6 mt-2 inline-flex items-center gap-1.5 rounded-lg bg-maum-navy-light px-3.5 py-2 text-xs font-semibold text-maum-navy leading-normal">
-            📅 2021년 시작 · <span className="text-maum-coral">올해 통합돌봄 연계</span> 전환
+            2021년 시작 · <span className="text-maum-coral">통합돌봄 연계 사업 모델</span> 구축예정
           </div>
           <a
             href={OT_FORM_URL}
