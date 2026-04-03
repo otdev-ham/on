@@ -18,15 +18,15 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-black/[0.06] bg-white/95 backdrop-blur-[12px]">
-      <div className="container-site flex h-14 items-center justify-between gap-2">
+      <div className="container-site flex min-h-[4.25rem] items-start justify-between gap-2 pt-2 sm:min-h-[4.75rem] sm:items-center sm:pt-3">
         <Link
           href="/"
-          className="min-w-0 shrink"
+          className="min-w-0 shrink self-start sm:self-center"
           aria-label="서울특별시작업치료사회 홈"
           onClick={() => setOpen(false)}
         >
-          <span className="flex flex-col gap-0.5">
-            <span className="text-[12px] font-extrabold leading-[1.15] tracking-tight text-maum-navy sm:text-[15px] sm:leading-tight">
+          <span className="flex flex-col gap-1">
+            <span className="text-[15px] font-extrabold leading-[1.2] tracking-tight text-maum-navy sm:text-[17px] sm:leading-tight lg:text-[19px]">
               <span className="sm:hidden">
                 서울특별시
                 <br />
@@ -34,13 +34,15 @@ export function Header() {
               </span>
               <span className="hidden sm:inline">서울특별시작업치료사회</span>
             </span>
-            <span className="text-[10px] font-bold text-maum-teal sm:text-[11px]">마음으로 온(ON)</span>
+            <span className="text-[11px] font-bold leading-tight text-maum-teal sm:text-xs lg:text-[13px]">
+              마음으로 온(ON)
+            </span>
           </span>
         </Link>
 
         {/* 참고 HTML: 모집 페이지 모바일에서 배지 + 지원하기 */}
         {pathname === "/recruit" && (
-          <div className="flex shrink-0 items-center gap-2 md:hidden">
+          <div className="flex shrink-0 items-center gap-2 self-start sm:self-center md:hidden">
             <span
               className={`rounded-full px-2.5 py-1 text-[11px] font-semibold ${
                 recruitActive ? "bg-maum-teal-light text-maum-teal" : "bg-maum-gray-200 text-maum-gray-700"
@@ -78,7 +80,7 @@ export function Header() {
 
         <button
           type="button"
-          className="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-lg border border-maum-gray-200 bg-white text-maum-teal-dark md:hidden"
+          className="inline-flex h-10 w-10 shrink-0 items-center justify-center self-start rounded-lg border border-maum-gray-200 bg-white text-maum-teal-dark sm:self-center md:hidden"
           aria-expanded={open}
           aria-controls="mobile-nav"
           aria-label={open ? "메뉴 닫기" : "메뉴 열기"}

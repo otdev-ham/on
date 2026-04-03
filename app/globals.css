@@ -78,3 +78,13 @@ body {
     transform: scale(1.12) translate(-4%, -3%);
   }
 }
+
+/* 히어로: 동영상 대신 정지 배경 (접근성·데이터 절약) */
+@media (prefers-reduced-motion: reduce) {
+  .hero-video-wrap {
+    display: none !important;
+  }
+  .hero-fallback-static {
+    display: block !important;
+  }
+}
