@@ -4,9 +4,9 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "마음으로 온(ON) | 성동구 발달장애 가족 지원",
+  title: "서울특별시작업치료사회 | 마음으로 온(ON)",
   description:
-    "지역사회와 함께하는 발달장애 가족 대상 작업치료·가족지원 프로그램. 서비스 신청 및 OT 모집 안내.",
+    "서울특별시작업치료사회 — 지역사회와 함께하는 발달장애 가족 대상 작업치료·가족지원 사업 마음으로 온(ON). 사업 소개 및 OT 모집 안내.",
 };
 
 export default function RootLayout({

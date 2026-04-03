@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
@@ -22,21 +21,20 @@ export function Header() {
       <div className="container-site flex h-14 items-center justify-between gap-2">
         <Link
           href="/"
-          className="flex min-w-0 shrink items-center gap-2"
-          aria-label="마음으로 온(ON) 홈"
+          className="min-w-0 shrink"
+          aria-label="서울특별시작업치료사회 홈"
           onClick={() => setOpen(false)}
         >
-          <span className="relative h-8 w-[110px] shrink-0 sm:h-9 sm:w-[130px]">
-            <Image
-              src="/branding/seongdong-center-logo.png"
-              alt=""
-              fill
-              className="object-contain object-left"
-              sizes="130px"
-            />
-          </span>
-          <span className="hidden text-[13px] font-extrabold leading-tight tracking-[-0.5px] text-maum-teal-dark sm:inline sm:text-[15px]">
-            마음으로 <span className="text-maum-coral">온(ON)</span>
+          <span className="flex flex-col gap-0.5">
+            <span className="text-[12px] font-extrabold leading-[1.15] tracking-tight text-maum-navy sm:text-[15px] sm:leading-tight">
+              <span className="sm:hidden">
+                서울특별시
+                <br />
+                작업치료사회
+              </span>
+              <span className="hidden sm:inline">서울특별시작업치료사회</span>
+            </span>
+            <span className="text-[10px] font-bold text-maum-teal sm:text-[11px]">마음으로 온(ON)</span>
           </span>
         </Link>
 

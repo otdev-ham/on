@@ -57,3 +57,24 @@ body {
 .maum-narrow {
   @apply mx-auto w-full max-w-[480px] px-5;
 }
+
+/* 히어로 배경: 느린 확대·이동 (Ken Burns) */
+.hero-bg-motion {
+  will-change: transform;
+  animation: hero-kenburns 28s ease-in-out infinite alternate;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-bg-motion {
+    animation: none;
+  }
+}
+
+@keyframes hero-kenburns {
+  0% {
+    transform: scale(1) translate(0%, 0%);
+  }
+  100% {
+    transform: scale(1.12) translate(-4%, -3%);
+  }
+}
