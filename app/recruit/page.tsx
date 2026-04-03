@@ -1,5 +1,4 @@
 import type { ReactNode } from "react";
-import Link from "next/link";
 import { RecruitFaq } from "@/components/RecruitFaq";
 import { OT_FORM_URL, RECRUITMENT } from "@/lib/site";
 
@@ -296,11 +295,6 @@ export default function RecruitPage() {
             지원서 작성하기 →
           </a>
           <p className="mt-3 text-center text-xs text-white/40">문의는 서울특별시작업치료사회로 연락주세요</p>
-          <p className="mt-6 text-center text-xs text-white/35">
-            <Link href="/users" className="underline-offset-2 hover:underline">
-              이용 안내(대상자) 보기
-            </Link>
-          </p>
         </Narrow>
       </div>
 
