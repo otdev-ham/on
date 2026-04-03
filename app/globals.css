@@ -22,7 +22,7 @@
   --color-ink: #1c1917;
   --color-ink-muted: #57534e;
 
-  /* maum-on-recruit.html 팔레트 (모집 페이지) */
+  /* maum-on-recruit.html (참고 HTML) 팔레트 — 모바일·데스크톱 공통 */
   --color-maum-teal: #2a9d8f;
   --color-maum-teal-light: #e8f7f5;
   --color-maum-teal-dark: #1b7268;
@@ -42,10 +42,18 @@ html {
 }
 
 body {
-  @apply bg-paper text-ink antialiased;
+  @apply bg-white text-maum-gray-900 antialiased;
   font-family: var(--font-sans);
+  font-size: 15px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
 }
 
+/* 참고 HTML: 섹션 max-width 480px + 좌우 20px */
 .container-site {
-  @apply mx-auto w-full max-w-[1100px] px-4 sm:px-5;
+  @apply mx-auto w-full max-w-[1100px] px-5;
+}
+
+.maum-narrow {
+  @apply mx-auto w-full max-w-[480px] px-5;
 }

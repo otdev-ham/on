@@ -44,40 +44,15 @@ const conditions = [
 ];
 
 function Narrow({ children, className = "" }: { children: ReactNode; className?: string }) {
-  return <div className={`mx-auto w-full max-w-[480px] px-5 ${className}`}>{children}</div>;
+  return <div className={`maum-narrow ${className}`}>{children}</div>;
 }
 
 export default function RecruitPage() {
-  const active = RECRUITMENT.open;
-
   return (
     <div className="bg-white text-maum-gray-900">
-      {/* 상단: 사이트 헤더 아래 보조 바 (HTML nav와 유사) */}
-      <div className="sticky top-12 z-40 border-b border-black/[0.06] bg-white/95 backdrop-blur-md sm:top-14">
-        <div className="container-site flex h-14 items-center justify-between">
-          <span className="text-[15px] font-extrabold tracking-tight text-maum-teal-dark">
-            마음으로 <span className="text-maum-coral">온(ON)</span>
-          </span>
-          <div className="flex items-center gap-3">
-            <span
-              className={`rounded-full px-2.5 py-1 text-[11px] font-semibold ${
-                active ? "bg-maum-teal-light text-maum-teal" : "bg-maum-gray-200 text-maum-gray-700"
-              }`}
-            >
-              {active ? "모집 중" : "마감"}
-            </span>
-            <a
-              href="#apply"
-              className="rounded-full bg-maum-coral px-4 py-2 text-[13px] font-bold text-white"
-            >
-              지원하기
-            </a>
-          </div>
-        </div>
-      </div>
+      {/* 참고 HTML: 단일 56px 네비는 Header에 통합 (모바일 모집 배지·지원하기) */}
 
-      {/* Hero */}
-      <header className="relative overflow-hidden bg-gradient-to-br from-[#f0faf8] via-[#fff5f2] to-white pb-11 pt-12 sm:pt-14">
+      <header className="relative overflow-hidden bg-[linear-gradient(155deg,#f0faf8_0%,#fff5f2_50%,#fff_100%)] pb-11 pt-[52px]">
         <div
           className="pointer-events-none absolute -right-10 -top-10 h-[180px] w-[180px] rounded-full opacity-100"
           style={{
@@ -88,7 +63,7 @@ export default function RecruitPage() {
           <div className="mb-4 inline-flex items-center gap-1.5 rounded-full bg-maum-teal-light px-3 py-1.5 text-xs font-bold text-maum-teal-dark">
             {RECRUITMENT.year}년 · <b className="text-maum-coral">6년째 지속</b> 사업
           </div>
-          <h1 className="text-[28px] font-extrabold leading-[1.22] tracking-tight text-maum-navy sm:text-3xl">
+          <h1 className="text-[28px] font-extrabold leading-[1.22] tracking-[-1px] text-maum-navy">
             지역사회에서
             <br />
             <em className="not-italic text-maum-teal">작업치료</em>를
@@ -102,7 +77,7 @@ export default function RecruitPage() {
             <br />
             함께 성장하는 구조입니다.
           </p>
-          <div className="mb-6 mt-2 inline-flex items-center gap-1.5 rounded-lg bg-maum-navy-light px-3.5 py-2 text-xs font-semibold text-maum-navy">
+          <div className="mb-6 mt-2 inline-flex items-center gap-1.5 rounded-lg bg-maum-navy-light px-3.5 py-2 text-xs font-semibold text-maum-navy leading-normal">
             📅 2021년 시작 · <span className="text-maum-coral">올해 통합돌봄 연계</span> 전환
           </div>
           <a
@@ -123,32 +98,32 @@ export default function RecruitPage() {
       </header>
 
       {/* Stat strip */}
-      <div className="mx-auto grid max-w-[480px] grid-cols-3 gap-2 px-5 pb-11">
-        <div className="rounded-[10px] bg-maum-gray-100 py-4 text-center">
-          <p className="text-2xl font-extrabold tracking-tight text-maum-teal-dark">
-            20<sub className="text-[13px] font-semibold">회</sub>
+      <div className="mx-auto grid w-full max-w-[480px] grid-cols-3 gap-2 px-5 pb-11">
+        <div className="rounded-[10px] bg-maum-gray-100 px-2.5 py-4 text-center">
+          <p className="text-2xl font-extrabold leading-none tracking-tight text-maum-teal-dark">
+            20<sub className="align-baseline text-[13px] font-semibold">회</sub>
           </p>
-          <p className="mt-1 text-[11px] font-medium leading-snug text-maum-gray-500">
+          <p className="mt-1 text-[11px] font-medium leading-[1.4] text-maum-gray-500">
             케이스당
             <br />
             최대 회기
           </p>
         </div>
-        <div className="rounded-[10px] bg-maum-gray-100 py-4 text-center">
-          <p className="text-2xl font-extrabold tracking-tight text-maum-teal-dark">
-            10<sub className="text-[13px] font-semibold">만</sub>
+        <div className="rounded-[10px] bg-maum-gray-100 px-2.5 py-4 text-center">
+          <p className="text-2xl font-extrabold leading-none tracking-tight text-maum-teal-dark">
+            10<sub className="align-baseline text-[13px] font-semibold">만</sub>
           </p>
-          <p className="mt-1 text-[11px] font-medium leading-snug text-maum-gray-500">
+          <p className="mt-1 text-[11px] font-medium leading-[1.4] text-maum-gray-500">
             회기당
             <br />
             지급 비용
           </p>
         </div>
-        <div className="rounded-[10px] bg-maum-gray-100 py-4 text-center">
-          <p className="text-2xl font-extrabold tracking-tight text-maum-teal-dark">
-            6<sub className="text-[13px] font-semibold">년</sub>
+        <div className="rounded-[10px] bg-maum-gray-100 px-2.5 py-4 text-center">
+          <p className="text-2xl font-extrabold leading-none tracking-tight text-maum-teal-dark">
+            6<sub className="align-baseline text-[13px] font-semibold">년</sub>
           </p>
-          <p className="mt-1 text-[11px] font-medium leading-snug text-maum-gray-500">
+          <p className="mt-1 text-[11px] font-medium leading-[1.4] text-maum-gray-500">
             사업
             <br />
             연속 운영
@@ -252,25 +227,24 @@ export default function RecruitPage() {
             진행되나요?
           </h2>
           <p className="mb-6 mt-1.5 text-[13px] text-maum-gray-500">신청부터 마무리까지</p>
-          <ol className="relative pl-2">
+          <div className="flex flex-col">
             {processSteps.map((step, idx) => (
-              <li key={step.n} className="relative pb-5 pl-10 last:pb-0">
-                {idx < processSteps.length - 1 && (
-                  <span
-                    className="absolute left-[15px] top-8 h-[calc(100%-0.5rem)] w-0.5 bg-maum-gray-200"
-                    aria-hidden
-                  />
-                )}
-                <span className="absolute left-0 top-0 flex h-8 w-8 items-center justify-center rounded-full bg-maum-teal text-[13px] font-extrabold text-white">
-                  {step.n}
-                </span>
-                <div className="pt-1">
+              <div key={step.n} className="flex gap-4 pb-5 last:pb-0">
+                <div className="flex shrink-0 flex-col items-center">
+                  <div className="flex h-8 w-8 items-center justify-center rounded-full bg-maum-teal text-[13px] font-extrabold text-white">
+                    {step.n}
+                  </div>
+                  {idx < processSteps.length - 1 ? (
+                    <div className="mt-1 w-0.5 flex-1 min-h-[20px] bg-maum-gray-200" aria-hidden />
+                  ) : null}
+                </div>
+                <div className="min-w-0 flex-1 pt-1 pb-1">
                   <p className="text-sm font-bold tracking-tight text-maum-navy">{step.title}</p>
                   <p className="mt-0.5 text-xs leading-relaxed text-maum-gray-500">{step.desc}</p>
                 </div>
-              </li>
+              </div>
             ))}
-          </ol>
+          </div>
         </Narrow>
       </section>
 
