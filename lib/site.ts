@@ -3,6 +3,9 @@ export const SERVICE_FORM_URL = "https://forms.gle/placeholder-service";
 /** OT 모집 Google Form (maum-on-recruit.html 기준) */
 export const OT_FORM_URL = "https://forms.gle/bjwAuYJTL2MG9gWH9";
 
+/** 서울특별시작업치료사회 인스타그램 */
+export const SEOUL_OT_INSTAGRAM_URL = "https://www.instagram.com/kaot.seoul/";
+
 /** 모집 공고 상태 (연간 업데이트) */
 export const RECRUITMENT = {
   open: true,

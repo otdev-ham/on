@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 import { RecruitFaq } from "@/components/RecruitFaq";
-import { OT_FORM_URL, RECRUITMENT } from "@/lib/site";
+import { OT_FORM_URL, RECRUITMENT, SEOUL_OT_INSTAGRAM_URL } from "@/lib/site";
 
 const benefits = [
   { icon: "📋", title: "ICF 기반 기록 역량", body: "오리엔테이션을 통해 ICF·작업기반 기록 양식 교육 제공", bg: "bg-maum-teal-light" },
@@ -294,7 +294,17 @@ export default function RecruitPage() {
           >
             지원서 작성하기 →
           </a>
-          <p className="mt-3 text-center text-xs text-white/40">문의는 서울특별시작업치료사회로 연락주세요</p>
+          <p className="mt-3 text-center text-xs leading-relaxed text-white/45">
+            문의: 서울특별시작업치료사회 ·{" "}
+            <a
+              href={SEOUL_OT_INSTAGRAM_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold text-white/90 underline-offset-2 hover:underline"
+            >
+              인스타그램 @kaot.seoul
+            </a>
+          </p>
         </Narrow>
       </div>
 

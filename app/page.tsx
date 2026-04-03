@@ -2,20 +2,14 @@ import Link from "next/link";
 import { PartnerBar } from "@/components/PartnerBar";
 import { StatCards } from "@/components/StatCards";
 
-const HERO_POSTER = "/branding/hero-heart-network.png";
 const HERO_VIDEO = "/branding/hero-video.mp4";
 
 export default function HomePage() {
   return (
     <div className="pb-11">
       <header className="relative min-h-[min(88vh,760px)] overflow-hidden bg-maum-gray-100">
-        {/* 배경: MP4 (Vercel은 public 정적 파일로 동일 경로 제공) + 저모션 시 PNG */}
+        {/* 배경: MP4만 (이미지 포스터/폴백 없음) */}
         <div className="pointer-events-none absolute inset-0 overflow-hidden">
-          <div
-            className="hero-fallback-static absolute inset-0 hidden bg-cover bg-center"
-            style={{ backgroundImage: `url(${HERO_POSTER})` }}
-            aria-hidden
-          />
           <div className="hero-video-wrap absolute inset-0">
             <div className="absolute left-1/2 top-1/2 h-[130%] w-[130%] -translate-x-1/2 -translate-y-1/2">
               <video
@@ -24,7 +18,6 @@ export default function HomePage() {
                 muted
                 loop
                 playsInline
-                poster={HERO_POSTER}
                 preload="metadata"
                 aria-hidden
               >

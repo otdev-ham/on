@@ -5,6 +5,8 @@ export type PartnerLogo = {
   shortLabel: string;
   src?: string;
   alt?: string;
+  /** 로고 아래에 표시할 문구 (예: 지역 회 조직명) */
+  captionBelow?: string;
 };
 
 export const PARTNER_LOGOS: PartnerLogo[] = [
@@ -19,6 +21,9 @@ export const PARTNER_LOGOS: PartnerLogo[] = [
     id: "seoul-ot",
     name: "서울특별시작업치료사회",
     shortLabel: "서울특별시작업치료사회",
+    src: "/branding/kaot-logo.png",
+    alt: "(사)대한작업치료사협회 로고",
+    captionBelow: "서울특별시작업치료사회",
   },
   {
     id: "byeolbyeol",

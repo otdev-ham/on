@@ -58,33 +58,9 @@ body {
   @apply mx-auto w-full max-w-[480px] px-5;
 }
 
-/* 히어로 배경: 느린 확대·이동 (Ken Burns) */
-.hero-bg-motion {
-  will-change: transform;
-  animation: hero-kenburns 28s ease-in-out infinite alternate;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .hero-bg-motion {
-    animation: none;
-  }
-}
-
-@keyframes hero-kenburns {
-  0% {
-    transform: scale(1) translate(0%, 0%);
-  }
-  100% {
-    transform: scale(1.12) translate(-4%, -3%);
-  }
-}
-
-/* 히어로: 동영상 대신 정지 배경 (접근성·데이터 절약) */
+/* 히어로: 동영상 끄기 시 헤더 배경색만 보이게 (이미지 폴백 없음) */
 @media (prefers-reduced-motion: reduce) {
   .hero-video-wrap {
     display: none !important;
-  }
-  .hero-fallback-static {
-    display: block !important;
   }
 }
