@@ -31,16 +31,24 @@ export default function HomePage() {
           aria-hidden
         />
         <div className="container-site relative z-10 flex min-h-[min(88vh,760px)] flex-col justify-center py-12 sm:py-16 lg:py-20">
-          <div className="max-w-xl">
-            <div className="mb-4 inline-flex rounded-full border border-maum-teal/25 bg-white/90 px-3 py-1.5 text-[11px] font-bold tracking-wide text-maum-teal-dark shadow-sm backdrop-blur-sm sm:text-xs">
-              마음으로 온(ON) · 성동구 발달장애 가족 지원
-            </div>
+          <div className="max-w-2xl">
+            <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-maum-teal sm:text-xs">
+              성동구 발달장애 가족 지원 사업
+            </p>
 
-            <h1 className="text-[26px] font-extrabold leading-[1.25] tracking-[-0.5px] text-maum-navy drop-shadow-sm sm:text-3xl lg:text-[34px] lg:leading-[1.2]">
+            <h1 className="mt-3 max-w-[20ch] text-balance font-black tracking-[-0.045em] text-maum-navy drop-shadow-sm">
+              <span className="block text-[clamp(2.75rem,10vw,4.75rem)] leading-[0.95]">마음으로</span>
+              <span className="mt-0.5 block text-[clamp(2.75rem,10vw,4.75rem)] leading-[0.95] sm:mt-1">
+                <span className="text-maum-teal">온</span>
+                <span className="text-maum-coral">(ON)</span>
+              </span>
+            </h1>
+
+            <h2 className="mt-8 text-[22px] font-extrabold leading-snug tracking-[-0.02em] text-maum-navy sm:text-[26px] lg:mt-10 lg:text-[30px] lg:leading-[1.2]">
               일상 속 참여와 신뢰를 위해
               <br />
               <span className="text-maum-teal">지역사회와 함께</span> 걸어갑니다
-            </h1>
+            </h2>
 
             <p className="mt-4 max-w-xl text-[15px] leading-relaxed text-maum-gray-800 sm:text-base">
               지역사회와 함께하는 작업치료·가족지원 사업입니다. 일상 속 참여와 신뢰를 한 걸음씩
